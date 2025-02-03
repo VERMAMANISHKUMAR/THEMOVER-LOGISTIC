@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+          font-family: 'Arial', sans-serif;
+          line-height: 1.6;
+          color: #333;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        /* Search Overlay */
+        .search-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.8);
+          z-index: 9999;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .search-overlay-layer {
+          background-color: rgba(255, 255, 255, 0.1);
+          width: 100%;
+          height: 33%;
+        }
+        
+        .search-overlay-close {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          cursor: pointer;
+        }
+        
+        .search-overlay-close-line {
+          display: block;
+          width: 30px;
+          height: 3px;
+          background: #fff;
+          margin: 5px 0;
+        }
+        
+        .input-search {
+          width: 80%;
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+        }
+        
+        /* Preloader */
+        .preloader {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 10000;
+        }
+        
+        .lds-ring div {
+          box-sizing: border-box;
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          margin: 8px;
+          border: 8px solid #000;
+          border-radius: 50%;
+          animation: lds-ring 1.2s linear infinite;
+        }
+        
+        @keyframes lds-ring {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        
+        /* Hero Slider */
+        .hero-slider {
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .hero-slider-item {
+          background-size: cover;
+          background-position: center;
+          text-align: center;
+          padding: 100px 20px;
+          color: #fff;
+        }
+        
+        .default-btn-one,
+        .default-btn-two {
+          display: inline-block;
+          padding: 10px 20px;
+          margin: 10px;
+          text-decoration: none;
+          border-radius: 5px;
+        }
+        
+        .default-btn-one {
+          background: #007bff;
+          color: #fff;
+        }
+        
+        .default-btn-two {
+          background: transparent;
+          color: #007bff;
+          border: 2px solid #007bff;
+        }
+        
+        /* Contact Area */
+        .contact-area {
+          padding: 50px 0;
+        }
+        
+        .contact-card {
+          text-align: center;
+          background: #f9f9f9;
+          padding: 20px;
+          border-radius: 10px;
+          margin-bottom: 30px;
+        }
+        
+        .contact-card i {
+          font-size: 36px;
+          color: #007bff;
+        }
+        
+        .contact-card h4 {
+          font-size: 20px;
+          margin: 15px 0;
+        }
+        
+        /* About Area */
+        .about-area {
+          padding: 50px 0;
+        }
+        
+        .about-image img {
+          max-width: 100%;
+          border-radius: 10px;
+        }
+        
+        .about-tabs .nav-link {
+          display: block;
+          padding: 10px 15px;
+          border: 1px solid #ddd;
+          background: #f9f9f9;
+          margin-bottom: 5px;
+          border-radius: 5px;
+        }
+        
+        .about-tabs .tab-pane ul li {
+          margin-bottom: 10px;
+        }
+        
+        .about-tabs .tab-pane ul li i {
+          color: #007bff;
+          margin-right: 10px;
+        }
+        
+        /* Services Area */
+        .services-area {
+          padding: 50px 0;
+        }
+        
+        .service-card {
+          text-align: center;
+          background: #f9f9f9;
+          padding: 20px;
+          border-radius: 10px;
+          margin-bottom: 30px;
+        }
+        
+        .service-card i {
+          font-size: 40px;
+          color: #007bff;
+        }
+        
+        .service-card h3 {
+          font-size: 18px;
+          margin-top: 15px;
+        }
+        
+        .view-btn {
+          text-align: center;
+          margin-top: 20px;
+        }
+        
+        .view-btn a {
+          display: inline-block;
+          padding: 10px 20px;
+          background: #007bff;
+          color: #fff;
+          border-radius: 5px;
+          text-decoration: none;
+        }
+        

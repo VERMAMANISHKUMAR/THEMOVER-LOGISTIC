@@ -1,0 +1,257 @@
+/* Hero Slider Container */
+.hero-slider {
+          position: relative;
+          overflow: hidden;
+        }
+        
+        /* Individual Slide Styling */
+        .hero-slider-item {
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          background-size: cover;
+          background-position: center;
+        }
+        
+        .hero-slider .hero-slider-item.item-bg1 {
+          background-image: url("../../../src/assets/img/hero-slider/beenar-1.avif");
+        }
+        .hero-slider .hero-slider-item.item-bg2 {
+          background-image: url("../../../src/assets/img/hero-slider/beenar-2.avif");
+        }
+        .hero-slider .hero-slider-item.item-bg3 {
+          background-image: url("../../../src/assets/img/hero-slider/beenar-3.avif");
+        }
+        .hero-slider .hero-slider-item.item-bg4 {
+          background-image: url("../../../src/assets/img/gallery/gallery-2.png");
+        }
+        .hero-slider .hero-slider-item.item-bg5 {
+          background-image: url("../../../src/assets/img/gallery/gallery-3.png");
+        }
+        .hero-slider .hero-slider-item.item-bg6 {
+          background-image: url("../../../src/assets/img/gallery/gallery-4.png");
+        }
+        .hero-slider .hero-slider-item.item-bg7 {
+          background-image: url("../../../src/assets/img/gallery/gallery-5.png");
+        }
+        
+        .hero-slider .banner-content h1 {
+          color: #ffffff;
+          font-size: 45px;
+          line-height: 1;
+          margin-bottom: 5px;
+        }
+        .hero-slider .banner-content span {
+          color: #e0e0e1;
+          font-size: 38px;
+          margin-bottom: 20px;
+          padding-top: 30px;
+         
+        }
+        
+        /* Table Cell Centering */
+        .d-table {
+          display: table;
+          width: 100%;
+          height: 100%;
+        }
+        
+        .d-table-cell {
+          display: table-cell;
+          vertical-align: middle;
+        }
+        
+        /* Banner Content */
+        .banner-content {
+          text-align: center;
+          color: #fff;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        
+        .banner-content span {
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 2px;
+          color: #ffc107;
+          margin-bottom: 10px;
+        }
+        
+        .banner-content h1 {
+          font-size: 4px;
+          font-weight: bold;
+          line-height: 1.2px;
+          margin-bottom: 20px;
+        }
+        
+        .banner-content p {
+          font-size: 18px;
+          line-height: 1.6;
+          margin-bottom: 30px;
+        }
+
+
+/* Apply the animation to the entire banner content */
+.hero-slider-item .banner-content {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+/* Optional: Add delay to individual elements for a staggered effect */
+.hero-slider-item .banner-content h1 {
+  animation: slideInLeft 1.2s ease-out forwards;
+}
+
+.hero-slider-item .banner-content p.description {
+  animation: slideInLeft 1.2s ease-out forwards;
+}
+
+.hero-slider-item .banner-content .default-btn-one {
+  animation: slideInLefft 1.3s ease-out forwards;
+}
+
+.hero-slider-item .banner-content .default-btn-two {
+  animation: slideInRight 1.6s ease-out forwards;
+}
+
+        /* Buttons */
+        .default-btn-one {
+          display: inline-block;
+          padding: 12px 30px;
+          background: #FE0053;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 14px;
+          border-radius: 50px;
+          transition: 0.3s;
+          text-decoration: none;
+        }
+        
+        .default-btn-one:hover {
+          background:#450B85;
+          color: #fff;
+        }
+        
+        .default-btn-two {
+          display: inline-block;
+          padding: 12px 30px;
+          background:#FE0053;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 14px;
+          border-radius: 50px;
+          transition: 0.3s;
+          text-decoration: none;
+        }
+        
+        .default-btn-two:hover {
+          background:#450B85;
+          color: #fff;
+        }
+        /* Animation for the title */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animation to the title */
+.hero-slider-item .banner-content h1 {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+          .hero-slider-item {
+            height: 40vh;
+          }
+        
+          .banner-content h1 {
+            font-size: 30px;
+          }
+        
+          .banner-content p {
+            font-size: 15px;
+          }
+        
+          .default-btn-one, .default-btn-two {
+            font-size: 12px;
+            padding: 10px 20px;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .banner-content h1 {
+            font-size: 11px;
+          }
+        
+          .banner-content p {
+            font-size: 14px;
+          }
+        }
+     /* ------------------------------------ */
+   
+    .hero-slider .hero-slider-item {
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      height: 560px;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-slider .hero-slider-item::before {
+      content: "";
+      position: absolute;
+      background: #301d44;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.6;
+      z-index: -1;
+    }
+
+ 
+    .banner-content span {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 15px;
+      
+    }
+    .banner-content h1 {
+      color: #ffffff;
+      font-size: 45px;
+      text-align: center;
+      margin-bottom: 15px;
+      
+    }
+    .hero-slider .banner-content p {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+    .hero-slider.owl-theme .owl-nav {
+      margin: 0;
+    }
+    .hero-slider.owl-theme .owl-nav .owl-prev, .hero-slider.owl-theme .owl-nav .owl-next {
+      position: absolute;
+      left: 15px;
+      height: 50px;
+      width: 40px;
+      text-align: center;
+      top: 50%;
+      font-size: 40px;
+      line-height: 1;
+      color: #f3f2f3;
+      margin: -30px 0 0;
+    }
+
+    

@@ -1,0 +1,108 @@
+/* Reset and base styles */
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+     
+        
+        /* Stats Dashboard Container */
+        .stats-dashboard {
+          text-align: center;
+          padding: 40px 20px;
+          background-color:#301D44;
+        }
+        
+        .header-counter {
+          font-size: 1.8rem;
+          margin-bottom: 30px;
+          color: white;
+          font-weight: 600;
+        }
+        
+        /* Stats Container */
+        .stats-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 40px;
+          padding: 20px;
+        }
+        
+        /* Stat Card */
+        .stat-card {
+          background: white;
+          border: 1px solid #e3e3e3;
+          border-radius: 10px;
+          width: 200px;
+          padding: 20px 15px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .stat-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Icon Styling */
+        .icon {
+          width: 50px;
+          height: 50px;
+          margin: 0 auto 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .icon svg {
+          width: 100%;
+          height: 100%;
+          fill: #B10D6B; /* Default green for icons */
+          transition: fill 0.2s ease;
+        }
+        
+        .stat-card:hover .icon svg {
+          fill:#450B85; /* Hover color for icons */
+        }
+        
+        /* Count Styling */
+        .count {
+          font-size: 2rem;
+          font-weight: bold;
+          margin: 10px 0;
+          color: #222;
+        }
+        
+        /* Label Styling */
+        .label {
+          font-size: 1rem;
+          color: #666;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+          .stats-container {
+            gap: 15px;
+          }
+        
+          .stat-card {
+            width: 160px;
+          }
+        
+          .icon {
+            width: 40px;
+            height: 40px;
+          }
+        
+          .count {
+            font-size: 1.6rem;
+          }
+        
+          .label {
+            font-size: 0.9rem;
+          }
+        }
+        
