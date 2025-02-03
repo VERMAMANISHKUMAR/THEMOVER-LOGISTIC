@@ -37,9 +37,9 @@ const PartnerSlider = () => {
         <Slider {...settings} className="partner-slider">
           {partners.map((partner, index) => (
             <div className="partner-slider-item" key={index}>
-              <a href="#">
+              <button type="button" className="partner-logo-button" onClick={() => alert('Partner clicked!')}>
                 <img src={partner} alt={`Partner ${index + 1}`} />
-              </a>
+              </button>
             </div>
           ))}
         </Slider>

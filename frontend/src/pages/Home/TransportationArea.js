@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import shape3 from '../../assets/img/shape/shape3.png'
+import shape3 from '../../assets/img/shape/shape3.png';
 
 const TransportationArea = () => {
   const [formData, setFormData] = useState({
@@ -17,7 +17,6 @@ const TransportationArea = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log("Form Data:", formData);
   };
 
@@ -35,61 +34,26 @@ const TransportationArea = () => {
               <div className="transportation-shape">
                 <img src={shape3} alt="icon" />
               </div>
+
               <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Height (CM):"
-                    name="height"
-                    value={formData.height}
-                    onChange={handleChange}
-                  />
-                </div>
-
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Weight (KG):"
-                    name="weight"
-                    value={formData.weight}
-                    onChange={handleChange}
-                  />
-                </div>
-
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Width (CM):"
-                    name="width"
-                    value={formData.width}
-                    onChange={handleChange}
-                  />
-                </div>
-
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Type of commodity:"
-                    name="commodity"
-                    value={formData.commodity}
-                    onChange={handleChange}
-                  />
-                </div>
-
-                <div className="form-group mb-30">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Distance (KM):"
-                    name="distance"
-                    value={formData.distance}
-                    onChange={handleChange}
-                  />
-                </div>
+                {[
+                  { name: "height", placeholder: "Height (CM):" },
+                  { name: "weight", placeholder: "Weight (KG):" },
+                  { name: "width", placeholder: "Width (CM):" },
+                  { name: "commodity", placeholder: "Type of commodity:" },
+                  { name: "distance", placeholder: "Distance (KM):" },
+                ].map((field) => (
+                  <div className="form-group" key={field.name}>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder={field.placeholder}
+                      name={field.name}
+                      value={formData[field.name]}
+                      onChange={handleChange}
+                    />
+                  </div>
+                ))}
 
                 <div className="form-btn">
                   <button type="submit" className="default-btn-one me-4">
@@ -99,6 +63,7 @@ const TransportationArea = () => {
                     Get A Full Quote
                   </button> */}
                 </div>
+
                 <h3>Get a brochure / 10% Discount on first order</h3>
               </form>
             </div>
@@ -112,7 +77,9 @@ const TransportationArea = () => {
                     <a
                       href="https://youtu.be/p10x4nxuA-s?si=46xmLZt3iDypgGHU"
                       className="popup-youtube"
-                    target="_blank">
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="bx bx-play whiteText"></i>
                       <span className="ripple pinkBg"></span>
                       <span className="ripple pinkBg"></span>
