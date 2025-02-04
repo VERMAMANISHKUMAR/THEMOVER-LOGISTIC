@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.header .nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.header .nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.home .hero {
+  text-align: center;
+  background: #f4f4f4;
+  padding: 2rem 1rem;
+}
+
+.home .hero button {
+  padding: 0.5rem 1rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.home .features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.home .features .feature {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header .nav ul {
+    flex-direction: column;
+  }
+}

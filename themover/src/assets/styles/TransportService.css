@@ -1,0 +1,58 @@
+.transport-service-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center; /* Center horizontally */
+          padding: 40px;
+          font-family: sans-serif; /* Use a suitable font */
+          background-color: #f8f8f8; /* Light background color */
+          
+        }
+        
+        h1 {
+          margin-bottom: 30px;
+          text-align: center;
+          color: #333; /* Darker heading color */
+        }
+        
+        .service-cards {
+          display: flex;
+          justify-content: center; /* Center the cards horizontally */
+          gap: 40px; /* Space between cards */
+        }
+        
+        .service-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center; /* Center content within cards */
+          text-align: center;
+          padding: 20px;
+          border: 1px solid #eee; /* Light border */
+          border-radius: 8px;
+          background-color: white;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+          max-width: 300px; /* Adjust as needed */
+        }
+        
+        .service-icon {
+          width: 100px; /* Adjust icon size */
+          height: 100px;
+          margin-bottom: 15px;
+        }
+     
+        h2 {
+          margin-bottom: 10px;
+          color: #555; /* Slightly darker heading color */
+        }
+        
+        p {
+          color: #777; /* Lighter text color */
+          line-height: 1.6;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 900px) {
+          .service-cards {
+            flex-direction: column; /* Stack cards vertically on smaller screens */
+            gap: 30px;
+          }
+        }

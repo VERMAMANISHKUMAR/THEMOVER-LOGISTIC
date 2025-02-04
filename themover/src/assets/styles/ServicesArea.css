@@ -1,0 +1,61 @@
+/* ServicesArea.css */
+
+/* Container Styling */
+.container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+        
+        /* Card Styling */
+        .services-card {
+          background-color: #f7f7f7;
+          border-radius: 12px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          text-align: center;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .services-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Icon Styling */
+        .services-icon {
+          font-size: 40px;
+          color: #ec4899; /* Tailwind pink-500 */
+          margin-bottom: 15px;
+        }
+        
+        /* Title Styling */
+        .services-title {
+          font-size: 18px;
+          font-weight: 600;
+          color: #111827; /* Tailwind gray-900 */
+          margin-bottom: 10px;
+        }
+        
+        /* Description Styling */
+        .services-description {
+          font-size: 14px;
+          color: #4b5563; /* Tailwind gray-600 */
+          line-height: 1.5;
+          margin-bottom: 15px;
+        }
+        
+        /* Link Styling */
+        .services-link {
+          display: inline-block;
+          font-size: 14px;
+          color: #ec4899; /* Tailwind pink-500 */
+          text-decoration: none;
+          font-weight: 500;
+        }
+        
+        .services-link:hover {
+          color: #be185d; /* Tailwind pink-600 */
+          text-decoration: underline;
+        }
+        

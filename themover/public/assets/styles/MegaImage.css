@@ -1,0 +1,61 @@
+/* MegaImage.css */
+
+.mega-image-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.mega-image-container h2 {
+  font-size: 28.8px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.city-image-container {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.city-image-container img {
+  width: 100%; 
+  height: auto; 
+  display: block;
+  border-radius: 10px; 
+}
+
+.city-image-container p {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mega-image-container h2 {
+    font-size: 24px;
+  }
+  .city-image-container p {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mega-image-container h2 {
+    font-size: 20px;
+  }
+  .city-image-container img{
+    width: 100%;
+  }
+  .city-image-container p {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+}

@@ -1,0 +1,164 @@
+/* General Styles */
+.transportation-area {
+          background-color: #f9f9f9;
+          padding: 80px 0;
+        }
+        
+        .container-fluid {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        
+        .section-title {
+          text-align: left;
+          margin-bottom: 30px;
+        }
+        
+        .section-title span {
+          color: #ff5a5f;
+          font-weight: bold;
+        }
+        
+        .section-title h2 {
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        /* Transportation Form */
+        .transportation-form {
+          background-color: #FB0156;
+          padding: 40px;
+          border-radius: 10px;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .transportation-form .form-group {
+          margin-bottom: 15px;
+        }
+        
+        .transportation-form .form-control {
+          width: 100%;
+          padding: 12px;
+          border-radius: 5px;
+          border: 1px solid #ddd;
+          font-size: 16px;
+        }
+        
+        .form-btn {
+          margin-top: 20px;
+        }
+        
+        .default-btn-one {
+          background-color: #ff5a5f;
+          color: rgb(245, 42, 42);
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        
+        .default-btn-one:hover {
+          background-color: #e04e54;
+        }
+        
+        /* Cost Calculator Styles */
+        .cost-calculator {
+          margin-top: 30px;
+          padding: 20px;
+          background: rgb(255, 255, 255);
+          border-radius: 10px;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cost-calculator h1 {
+          font-size: 22px;
+          margin-bottom: 15px;
+        }
+        
+        .cost-calculator label {
+          display: block;
+          font-weight: bold;
+          margin-top: 10px;
+        }
+        
+        .cost-calculator input,
+        .cost-calculator select {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #d91414;
+          border-radius: 5px;
+          font-size: 16px;
+          margin-top: 5px;
+        }
+        
+        .cost-calculator button {
+          margin-top: 20px;
+          background-color: #ff5a5f;
+       
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .cost-calculator button:hover {
+          background-color: #e04e54;
+        }
+        
+        #result {
+          margin-top: 20px;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+          .transportation-form {
+            padding: 20px;
+          }
+          
+          .cost-calculator {
+            padding: 15px;
+          }
+        }
+        /*  ============*/
+        .popup-video {
+          border-radius: 10px; /* Rounded corners */
+          overflow: hidden; /* Prevents overflow */
+          background-color: rgba(0, 0, 0, 0.8); /* Optional: Adds a dark background */
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .video-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          padding: 15px;
+          background: rgba(255, 255, 255, 0.1);
+         
+        }
+        
+        .ripple {
+          border-radius: 10px;
+          animation: ripple-animation 1.2s infinite;
+        }
+        
+        @keyframes ripple-animation {
+          0% {
+            transform: scale(1);
+            opacity: 0.8;
+
+          }
+          100% {
+            transform: scale(1.4);
+            opacity: 0;
+          }
+        }
+        
